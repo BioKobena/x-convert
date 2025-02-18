@@ -13,12 +13,12 @@ export default function Button({ label, onPress }: Props) {
                 style={styles.button}
                 onPress={onPress}
             >
-                <FontAwesome
-                    name="apple"
+                {/* <FontAwesome
+                    name="money"
                     size={18}
                     color="#25292e"
                     style={styles.buttonIcon}
-                />
+                /> */}
                 <Text style={styles.buttonLabel}>{label}</Text>
             </Pressable>
         </View>

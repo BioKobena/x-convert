@@ -4,7 +4,7 @@ import React from "react";
 type Props = {
     placeholder: string;
     value: string;
-    onChangeText?: () => void;
+    onChangeText?: (text: string) => void;
 };
 const InputView = ({ placeholder, value, onChangeText }: Props) => {
     return (
@@ -29,11 +29,11 @@ const styles = StyleSheet.create({
     input: {
         height: 45,
         borderColor: "transparent",
-        backgroundColor: "#e4e9ed",
+        backgroundColor: "#efeff0",
         borderWidth: 1,
         width: 330,
         borderRadius: 4,
-        padding: 5,
+        padding: 7,
         fontSize: 15,
         fontWeight: "400",
         color: "#000000",
