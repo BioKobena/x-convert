@@ -29,12 +29,14 @@ export default function Index() {
     setEuro("");
     setXof("");
     setResult(0);
+    console.log("Bon !");
   };
   const handleConvert = () => {
     console.log("handleConvert");
   };
   return (
     <View style={styles.container}>
+      <StatusBar style="dark" />
       <View style={styles.containerResult}>
         <Text style={styles.result}>€ {result ? result : 0}</Text>
       </View>
@@ -63,6 +65,12 @@ export default function Index() {
           icon="restore"
           color="#fff"
         />
+        {/* <IconButton
+          backgroundColor="#000"
+          onPress={handleRestart}
+          icon="adobe"
+          color="#fff"
+        /> */}
         <IconButton
           backgroundColor="#ececec"
           icon="arrow-upward"
@@ -95,6 +103,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#fff",
+    position: "fixed",
   },
   containerResult: {},
   result: {

@@ -14,6 +14,7 @@ const InputView = ({ placeholder, value, onChangeText }: Props) => {
                 value={value}
                 style={styles.input}
                 onChangeText={onChangeText}
+                keyboardType="numbers-and-punctuation"
             />
         </View>
     );

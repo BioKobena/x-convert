@@ -5,7 +5,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 type Props = {
     icon?: keyof typeof MaterialIcons.glyphMap;
     label?: string;
-    onPress?: () => void;
+    onPress?: () => (void);
     backgroundColor?: string;
     color?: string;
 };
